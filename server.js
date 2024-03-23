@@ -8,11 +8,11 @@ app.set("view engine", "ejs");
 
 app.get("/",(req,res)=>{
 
-    let ip = req.connection.remoteAddress;
-    
+    let ip = req.ip
+
     console.log(ip);
 
-    res.render("index")
+    res.render("index",{data:ip})
 });
 
 
