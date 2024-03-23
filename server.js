@@ -9,6 +9,7 @@ app.set("view engine", "ejs");
 app.get("/",(req,res)=>{
 
     let ip = req.ip
+    ip.replace("::ffff:","")
 
     console.log(ip);
 
