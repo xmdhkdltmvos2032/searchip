@@ -7,14 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-
-    let ip = req.connection.remoteAddress;
-
-    if (ip && ip.includes('::ffff:')) {
-        ip = ip.replace('::ffff:', '');
-    }
-
-    res.render("index", { data: ip });
+    res.send("예지야겁나사랑해")
 });
 
 
