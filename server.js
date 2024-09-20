@@ -18,4 +18,4 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(3000, () => console.log("server start!!!!!!!!!!!!!"));
+app.listen(3000, () => console.log("server!!!!!!!!!!!!!"));
